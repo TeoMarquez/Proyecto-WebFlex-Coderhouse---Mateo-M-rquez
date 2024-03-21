@@ -1,0 +1,575 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --dropdown-max-height: 200px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    animation: fadeInPage 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #86615C;
+  }
+  
+ header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-button {
+    margin-left: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.5em;
+    text-decoration: none;
+  }
+
+  .dropdown,
+  .header-button {
+    display: inline-block; /* Hace que los elementos "Compras" y "Sobre Nosotros" estén en línea */
+    margin-left: 10px; /* Agrega un poco de espacio entre los elementos */
+  }
+  
+  .logo img,
+  .user-profile img {
+    width: 30px; /* Establece el mismo ancho para el logo y la foto de perfil */
+    height: 30px;
+  }
+  
+  .logo img:hover,
+  .user-profile img:hover {
+    transform: scale(1.4);
+  }
+  
+  section.product-panel {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product-panel {
+    transition: height 0.3s ease; /* Agrega una transición suave */
+  }
+
+  section.product-panel .row {
+    width: 100%;
+    display: flex;
+  }
+  
+  section.product-panel .row .col-md-6 {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 2 10px; /* Agregar un poco de espacio entre los productos */
+  }
+  
+  .dropdown-wrapper {
+    float: left;
+    margin-left: 10px;
+  }
+  
+  .dropdown {
+    margin-right: auto; /* Mueve el contenedor de la categoría hacia la izquierda */
+}
+
+  .dropbtn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1em; /* Aumenta el relleno del botón */
+    border: none;
+    cursor: pointer;
+    font-size: 1em; /* Aumenta el tamaño de la tipografía */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    transition: all 0.3s ease-in-out; /* Agrega una transición suave */
+  }
+
+  .dropbtn:hover {
+    background-color: #666; /* Cambia el color de fondo al pasar el mouse */
+  }
+  
+  .dropdown-content {
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    position: absolute;
+    z-index: 1;
+    width: 160px;
+    background-color: #f9f9f9a6;
+  }
+  
+  .dropdown-content a {
+    color: #8a90e1;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1d0d0;
+  }
+  
+  .dropdown-wrapper:hover .dropdown-content,
+  .user-dropdown:hover .user-dropdown-content,
+  .category-dropdown-wrapper:hover .category-dropdown {
+    max-height: 200px;
+    overflow: visible;
+  }
+
+  .user-profile img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .user-dropdown {
+    float: right;
+  }
+
+  .user-dropdown-content {
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    position: absolute;
+    z-index: 1;
+    width: 160px;
+    background-color: #952020;
+  }
+  
+  .user-dropdown-content a {
+    color: #ff9c9c;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+  }
+  
+  .user-dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .user-dropdown:hover .user-dropdown-content {
+    max-height: var(--dropdown-max-height);
+  }
+  
+  .user-dropdown-content {
+    /* Resto del código */
+    right: 0; /* Alinea el menú desplegable a la derecha */
+  }
+
+  .user-dropdown-content.left {
+    right: auto; /* Reinicia la alineación para que se ajuste a la izquierda */
+    left: 0; /* Alinea el menú desplegable a la izquierda */
+  }
+
+  .category-dropdown-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  .category-dropdown {
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    position: absolute;
+    z-index: 1;
+    width: 160px;
+    background-color: #f9f9f9;
+  }
+  
+  .category-dropdown a {
+    color: var(--primary-color);
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .category-dropdown a:hover {
+    background-color: #ddd;
+  }
+  
+  .category-dropdown-wrapper:hover .category-dropdown {
+    max-height: var(--dropdown-max-height);
+  }
+  
+  .product-image {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Agrega bordes redondeados a las imágenes */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave al agrandar las imágenes */
+    }
+  
+  .product-image.fade-in {
+    opacity: 1;
+  }
+  
+  .rating {
+    font-size: 24px;
+    color: gold;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  section {
+    width: 50%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #f7bcbc; /* Agrega un borde sólido gris */
+    box-shadow: 0 2px 4px rgba(189, 74, 74, 0.1); /* Agrega una sombra suave */
+    
+  }
+  
+  .about-us {
+    background-color: #f9f9f9; /* Cambia el color de fondo */
+    padding: 20px; /* Aumenta el espacio interno */
+    margin-bottom: 20px; /* Agrega un margen inferior para separar cada sección */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+    transition: transform 0.3s ease-in-out; /* Transición suave al agrandar el panel */
+  }
+
+   
+  .about-us:hover{
+    background-color: #9f9e9eb5; /* Cambia el color de fondo */
+    transform: scale(1.1); /* Agrandar la imagen al pasar el mouse por encima */
+  }
+  
+  .about-us h2 {
+    color: #333; /* Cambia el color del título */
+    margin-bottom: 10px; /* Agrega un margen inferior al título */
+  }
+  
+  .about-us p {
+    color: #666; /* Cambia el color del texto */
+    line-height: 1.6; /* Ajusta la altura de línea para una mejor legibilidad */
+  }
+  
+  .about-us img {
+    width: 100%; /* Ajusta el ancho de la imagen para que se adapte al contenedor */
+    border-radius: 10px; /* Agrega bordes redondeados a la imagen */
+    margin-top: 20px; /* Agrega un margen superior para separar la imagen del texto */
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .rating {
+    font-size: 24px;
+    color: gold;
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1em;
+    clear: both;
+    margin-top: auto; /* Empuja el footer hacia la parte inferior del contenedor principal */
+  }
+  
+  .reserved {
+    text-decoration: underline;
+  }
+  
+  .contact-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+  }
+
+  .product-panel .col-md-6 {
+    width: 45%; /* Ancho del panel */
+    background-color: #0bffe3; /* Fondo gris */
+    padding: 20px; /* Espacio alrededor del panel */
+    margin: 10px; /* Margen entre los paneles */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease-in-out; /* Transición suave al agrandar el panel */
+  }
+
+  .product-panel .col-md-6:hover {
+    transform: scale(1.1); /* Agranda el panel al pasar el mouse sobre él */
+  }
+
+  .product-image:hover {
+  transform: scale(1.1); /* Agrandar la imagen al pasar el mouse por encima */
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+      display: block;
+      margin-bottom: 5px;
+  }
+
+  .form-group input {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+
+  .checkbox-group {
+      margin-bottom: 20px;
+  }
+
+  .button-container {
+      text-align: center;
+  }
+
+  .button-container button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+
+  .button-container button:hover {
+      background-color: #666;
+  }
+
+  .button-container a {
+      margin-left: 10px;
+      color: #333;
+      text-decoration: none;
+  }
+
+  .button-container a:hover {
+      text-decoration: underline;
+  }
+
+  .register-container {
+    background-color: #fff; /* Color de fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaciado interno */
+    max-width: 400px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar en la página */
+  }
+
+  .login-container {
+    background-color: #fff; /* Color de fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaciado interno */
+    max-width: 400px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar en la página */
+  }
+
+  .login-container {
+    background-color: #fff; /* Color de fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 30px; /* Espaciado interno */
+    max-width: 400px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar en la página */
+}
+
+  .login-container h2 {
+      margin-bottom: 20px; /* Aumenta el margen inferior del título */
+  }
+
+  .login-form-group {
+      margin-bottom: 25px; /* Aumenta el margen inferior de los grupos de formularios */
+  }
+
+  .login-form-group label {
+      font-weight: bold; /* Hace que las etiquetas del formulario sean más destacadas */
+  }
+
+  .login-form-group input {
+      width: calc(100% - 20px); /* Ajusta el ancho de los campos de entrada */
+      padding: 10px; /* Aumenta el relleno */
+      border: 1px solid #ccc; /* Borde delgado */
+      border-radius: 5px; /* Bordes redondeados */
+  }
+
+  .login-checkbox-group {
+      margin-bottom: 25px; /* Aumenta el margen inferior del grupo de casillas de verificación */
+  }
+
+  .login-button-container {
+      text-align: center; /* Centra los botones */
+  }
+
+  .login-button-container button {
+      background-color: #333; /* Color de fondo del botón */
+      color: #fff; /* Color del texto del botón */
+      padding: 12px 24px; /* Aumenta el relleno del botón */
+      border: none; /* Elimina el borde del botón */
+      border-radius: 5px; /* Bordes redondeados */
+      cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+      transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
+  }
+
+  .login-button-container button:hover {
+      background-color: #555; /* Cambia el color de fondo al pasar el mouse por encima del botón */
+  }
+
+  .login-button-container a {
+      margin-left: 10px; /* Aumenta el espacio entre el botón y el enlace */
+      color: #333; /* Color del texto del enlace */
+      text-decoration: none; /* Elimina el subrayado del enlace */
+  }
+
+  .login-button-container a:hover {
+      text-decoration: underline; /* Subraya el enlace al pasar el mouse por encima */
+  }
+
+  .product {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+  }
+
+  .product-image img {
+    margin-top: 1%;
+    margin-left: 2%;
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+  }
+
+  .product-details {
+      margin-left: 20px;
+  }
+
+  .rating {
+      color: gold;
+  }
+
+  .product-checkbox {
+      margin-left: auto; /* Mueve el checkbox al final del contenedor */
+  }
+
+  .checkout-buttons a {
+    margin-right: 10px;
+  }
+
+  /* Mover el checkbox debajo del precio */
+  .product-checkbox {
+      margin-left: 0; /* Reiniciar el margen izquierdo */
+      margin-top: 10px; /* Agregar un margen superior */
+  }
+
+  .checkout-buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+  }
+
+  .pay-button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+      margin: 5%;
+  }
+
+  .pay-button:hover {
+      background-color: #666;
+  }
+  
+  /* Estilos para las checkboxes */
+  input[type="checkbox"] {
+    display: none; /* Oculta el checkbox predeterminado */
+  }
+
+  /* Estilos para el contenedor de la checkbox personalizada */
+  .product-checkbox {
+    margin-left: 20px; /* Agrega espacio entre el producto y la checkbox */
+    position: relative; /* Establece la posición relativa para alinear la checkbox */
+  }
+
+  /* Estilos para la etiqueta que simulará la checkbox personalizada */
+  .product-checkbox label {
+    display: inline-block; /* Hace que la etiqueta sea un bloque en línea */
+    top: 50%; /* Alinea la etiqueta verticalmente al centro */
+    transform: translateY(-50%); /* Ajusta la posición verticalmente */
+    left: 0; /* Alinea la etiqueta a la izquierda del contenedor */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+
+  /* Estilos para el diseño de la checkbox personalizada */
+  .product-checkbox label::before {
+    content: ""; /* Agrega contenido antes de la etiqueta */
+    display: inline-block; /* Hace que el contenido sea un bloque en línea */
+    width: 20px; /* Establece el ancho de la checkbox */
+    height: 20px; /* Establece la altura de la checkbox */
+    border: 2px solid #333; /* Agrega un borde a la checkbox */
+    border-radius: 4px; /* Agrega bordes redondeados */
+    margin-right: 10px; /* Agrega espacio entre la checkbox y el texto */
+    position: relative; /* Establece la posición relativa para posicionar el contenido interno */
+    vertical-align: middle; /* Alinea verticalmente el contenido */
+  }
+
+  /* Estilos para simular el estado activo de la checkbox */
+  .product-checkbox input:checked + label::before {
+    background-color: #333; /* Cambia el color de fondo al estar marcada */
+  }
+
+  /* Estilos para simular la marca dentro de la checkbox */
+  .product-checkbox label::after {
+    content: "\2713"; /* Agrega la marca de verificación */
+    color: #fff; /* Color del texto de la marca */
+    font-size: 16px; /* Tamaño de la marca */
+    top: 50%; /* Alinea verticalmente al centro */
+    left: 50%; /* Alinea horizontalmente al centro */
+    transform: translate(-600%, -55%); /* Ajusta la posición */
+    opacity: 0; /* Inicialmente invisible */
+    position: absolute; /* Cambia la posición a absoluta */
+  }
+
+  /* Estilos para mostrar la marca cuando la checkbox está marcada */
+  .product-checkbox input:checked + label::after {
+    opacity: 1; /* Muestra la marca cuando la checkbox está marcada */
+  }
+
+  .sidebar {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    width: 250px; /* Ancho de la barra lateral */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+  .radio-buttons,
+  .checkboxes {
+      margin-bottom: 20px; /* Espaciado entre grupos de elementos */
+  }
+
+  .radio-buttons label,
+  .checkboxes label {
+      display: block; /* Muestra los elementos de forma vertical */
+      margin-bottom: 10px; /* Espaciado entre elementos */
+  }
+
+  .radio-buttons input[type="radio"],
+  .checkboxes input[type="checkbox"] {
+      margin-right: 5px; /* Espaciado entre el input y el texto */
+  }
+
+  .product-filter {
+      margin-top: 20px; /* Espaciado entre la sección de filtros y los productos */
+  }

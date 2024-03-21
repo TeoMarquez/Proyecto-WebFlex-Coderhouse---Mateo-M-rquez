@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy2F8YcbtwI8kCKvslF0CvqE9t7ByJQOp6" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <title>Tienda Online</title>
+</head>
+
+<body>
+
+    <header class="bg-dark text-white p-2">
+        <div class="logo">
+            <a href="carrito.html">
+                <img src="./imagenes/Principal/Carrito.jpeg" alt="Carrito de Compras" style="width: 30px;">
+            </a>
+        </div>
+        <div class="header-content">
+            <div class="dropdown">
+                <button class="dropbtn">Compras</button>
+                <div class="dropdown-content" id="dropdown-compras" style="display: none;">
+                    <a href="./compras/compra_packs.html">Packs</a>
+                    <a href="./compras/compra_luces.html">Luces</a>
+                    <a href="./compras/compra_camaras.html">Cámaras</a>
+                    <a href="./compras/compra_sensores.html">Sensores</a>
+                </div>
+            </div>
+            <a href="nosotros.html" class="header-button">Sobre Nosotros</a>
+            <a href="index.html" class="header-button">Inicio</a>
+        </div>
+        <div class="user-profile">
+            <img src="./imagenes/Principal/usuario.png" alt="Usuario" style="width: 30px;">
+            <div class="user-dropdown-content" style="display: none;" >
+                <a href="iniciar_sesion.html">Iniciar Sesión</a>
+                <a href="registrarse.html">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <div class="dropdown mb-3">
+            <button class="dropbtn">Categorías</button>
+            <div class="dropdown-content" id="dropdown-categorias" style="display: none;" >
+                <a href="#">Más Comprados</a>
+                <a href="#">Tendencias</a>
+            </div>
+        </div>
+
+        <section class="product-panel">
+            <div class="row">
+                <div class="col-md-6 mb-3" data-aos="zoom-in">
+                    <img class="product-image img-fluid" src="imagenes/inicio/1.jpg" Producto>
+                    <p>Control de entrada con contraseña digital</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3" data-aos="zoom-in">
+                    <img class="product-image img-fluid" src="imagenes/inicio/2.jpg"  alt="Producto">
+                    <p>Control de entrada de reconocimiento por huella digital</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3" data-aos="zoom-in">
+                    <img class="product-image img-fluid" src="imagenes/inicio/3.jpg"  alt="Producto" >
+                    <p>Control de humedad</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3" data-aos="zoom-in">
+                    <img class="product-image img-fluid" src="imagenes/inicio/4.jpg"  alt="Producto" >
+                    <p>Control de temperatura</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3" data-aos="zoom-in">
+                    <img class="product-image img-fluid" src="imagenes/inicio/5.jpg"  alt="Producto">
+                    <p>Cerradura digital</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3" data-aos="zoom-in">
+                    <img class="product-image img-fluid" src="imagenes/inicio/6.jpg"  alt="Producto" >
+                    <p>Luz rgb de descanzo controlada por telefono</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3" data-aos="zoom-in">
+                    <img class="product-image img-fluid" src="imagenes/inicio/7.jpg"  alt="Producto">
+                    <p>Cocina electrica vitroceramica de induccion con temporizador</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3" data-aos="zoom-in">
+                    <img class="product-image img-fluid" src="imagenes/inicio/8.jpg"  alt="Producto" >
+                    <p>EchoDot: asistente virtual</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3" data-aos="zoom-in">
+                    <img class="product-image img-fluid" src="imagenes/inicio/9.jpg"  alt="Producto" >
+                    <p>Firestick: Convierte en smart tu tv</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3" data-aos="zoom-in">
+                    <img class="product-image img-fluid" src="imagenes/inicio/10.jpg"  alt="Producto">
+                    <p>Cargador de induccion</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-2 mt-4">
+        <p class="reserved">Derechos Reservados</p>
+        <a href="nosotros.html" class="contact-btn">Contáctanos</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="controldesplegablesIndex.js"></script>
+</body>
+
+</html>

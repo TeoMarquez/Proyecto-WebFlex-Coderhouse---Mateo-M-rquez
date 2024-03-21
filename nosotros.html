@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy2F8YcbtwI8kCKvslF0CvqE9t7ByJQOp6" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <title>Tienda Online</title>
+</head>
+
+<body>
+
+    <header class="bg-dark text-white p-2">
+        <div class="logo">
+            <a href="carrito.html">
+                <img src="./imagenes/Principal/Carrito.jpeg" alt="Carrito de Compras" style="width: 30px;">
+            </a>
+        </div>
+        <div class="header-content">
+            <div class="dropdown">
+                <button class="dropbtn">Compras</button>
+                <div class="dropdown-content" id="dropdown-compras" style="display: none;">
+                    <a href="./compras/compra_packs.html">Packs</a>
+                    <a href="./compras/compra_luces.html">Luces</a>
+                    <a href="./compras/compra_camaras.html">Cámaras</a>
+                    <a href="./compras/compra_sensores.html">Sensores</a>
+                </div>
+            </div>
+            <a href="nosotros.html" class="header-button">Sobre Nosotros</a>
+            <a href="index.html" class="header-button">Inicio</a>
+        </div>
+        <div class="user-profile">
+            <img src="./imagenes/Principal/usuario.png" alt="Usuario" style="width: 30px;">
+            <div class="user-dropdown-content" style="display: none;" >
+                <a href="iniciar_sesion.html">Iniciar Sesión</a>
+                <a href="registrarse.html">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-us">
+            <h2>Nuestra Historia</h2>
+            <p>En Domótica Avanzada, nos dedicamos a proporcionar soluciones innovadoras para hacer que tu hogar sea más inteligente y eficiente. Desde sistemas de iluminación automatizados hasta dispositivos de seguridad conectados, estamos comprometidos con ofrecerte productos de calidad que mejoren tu estilo de vida.</p>
+        </section>
+        <section class="about-us">
+            <h2>Nuestra Misión</h2>
+            <p>nuestra misión es transformar la forma en que interactúas con tu hogar. Nos esforzamos por ofrecer las últimas tecnologías en domótica para simplificar tu vida diaria y brindarte mayor comodidad, seguridad y eficiencia energética. Estamos comprometidos con proporcionar productos de calidad y un servicio excepcional para ayudarte a crear un ambiente inteligente que se adapte a tus necesidades y estilo de vida</p>
+        </section>
+        <section class="about-us">
+            <h2>Nuestro Equipo</h2>
+            <p>En Domótica Innovadora, nuestro equipo está formado por apasionados expertos en tecnología y diseño, comprometidos con la excelencia y la satisfacción del cliente. Desde ingenieros hasta diseñadores de experiencia de usuario, cada miembro de nuestro equipo aporta su experiencia única para crear productos domóticos de vanguardia que mejoren tu calidad de vida. Conoce al equipo detrás de nuestra empresa y descubre cómo estamos impulsando el futuro de la automatización del hogar</p>
+        </section>
+
+        <section class="about-us">
+            <h2>Dirección</h2>
+            <p>123 Calle Principal, Ciudad, País</p>
+            <img class="img-fluid" src="./imagenes/Principal/Ubicacion.jpg" alt="Mapa de ubicación">
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-2 mt-4">
+        <p class="reserved">Derechos Reservados</p>
+        <a href="nosotros.html" class="contact-btn">Contáctanos</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="controldesplegables.js"></script>
+</body>
+</html>
