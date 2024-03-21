@@ -1,0 +1,19 @@
+section.product-panel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-panel {
+    transition: height 0.3s ease;
+}
+
+section.product-panel .row {
+    width: 100%;
+    display: flex;
+}
+
+section.product-panel .row .col-md-6 {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 2 10px; /* Agregar un poco de espacio entre los productos */
+}

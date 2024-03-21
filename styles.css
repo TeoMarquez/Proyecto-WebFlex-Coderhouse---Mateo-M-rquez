@@ -38,12 +38,7 @@
     display: inline-block; /* Hace que los elementos "Compras" y "Sobre Nosotros" estén en línea */
     margin-left: 10px; /* Agrega un poco de espacio entre los elementos */
   }
-  
-  .logo img,
-  .user-profile img {
-    width: 30px; /* Establece el mismo ancho para el logo y la foto de perfil */
-    height: 30px;
-  }
+
   
   .logo img:hover,
   .user-profile img:hover {
@@ -56,7 +51,7 @@
   }
   
   .product-panel {
-    transition: height 0.3s ease; /* Agrega una transición suave */
+    transition: height 0.3s ease; 
   }
 
   section.product-panel .row {
@@ -82,16 +77,16 @@
   .dropbtn {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 1em; /* Aumenta el relleno del botón */
+    padding: 1em;
     border: none;
     cursor: pointer;
-    font-size: 1em; /* Aumenta el tamaño de la tipografía */
-    border-radius: 5px; /* Agrega bordes redondeados */
-    transition: all 0.3s ease-in-out; /* Agrega una transición suave */
+    font-size: 1em; 
+    border-radius: 5px; 
+    transition: all 0.3s ease-in-out; 
   }
 
   .dropbtn:hover {
-    background-color: #666; /* Cambia el color de fondo al pasar el mouse */
+    background-color: #666; 
   }
   
   .dropdown-content {
@@ -159,13 +154,13 @@
   }
   
   .user-dropdown-content {
-    /* Resto del código */
-    right: 0; /* Alinea el menú desplegable a la derecha */
+  
+    right: 0; 
   }
 
   .user-dropdown-content.left {
-    right: auto; /* Reinicia la alineación para que se ajuste a la izquierda */
-    left: 0; /* Alinea el menú desplegable a la izquierda */
+    right: auto;
+    left: 0; 
   }
 
   .category-dropdown-wrapper {
@@ -201,8 +196,8 @@
     height: 250px;
     object-fit: cover;
     margin-bottom: 10px;
-    border-radius: 5px; /* Agrega bordes redondeados a las imágenes */
-    transition: transform 0.3s ease-in-out; /* Agrega una transición suave al agrandar las imágenes */
+    border-radius: 5px; 
+    transition: transform 0.3s ease-in-out; 
     }
   
   .product-image.fade-in {
@@ -226,40 +221,40 @@
     width: 50%;
     margin-bottom: 20px;
     box-sizing: border-box;
-    border: 1px solid #f7bcbc; /* Agrega un borde sólido gris */
-    box-shadow: 0 2px 4px rgba(189, 74, 74, 0.1); /* Agrega una sombra suave */
+    border: 1px solid #f7bcbc; 
+    box-shadow: 0 2px 4px rgba(189, 74, 74, 0.1);
     
   }
   
   .about-us {
-    background-color: #f9f9f9; /* Cambia el color de fondo */
-    padding: 20px; /* Aumenta el espacio interno */
-    margin-bottom: 20px; /* Agrega un margen inferior para separar cada sección */
-    border-radius: 10px; /* Agrega bordes redondeados */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
-    transition: transform 0.3s ease-in-out; /* Transición suave al agrandar el panel */
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out; 
   }
 
    
   .about-us:hover{
-    background-color: #9f9e9eb5; /* Cambia el color de fondo */
-    transform: scale(1.1); /* Agrandar la imagen al pasar el mouse por encima */
+    background-color: #9f9e9eb5; 
+    transform: scale(1.1); 
   }
   
   .about-us h2 {
-    color: #333; /* Cambia el color del título */
-    margin-bottom: 10px; /* Agrega un margen inferior al título */
+    color: #333; 
+    margin-bottom: 10px; 
   }
   
   .about-us p {
-    color: #666; /* Cambia el color del texto */
+    color: #666; 
     line-height: 1.6; /* Ajusta la altura de línea para una mejor legibilidad */
   }
   
   .about-us img {
-    width: 100%; /* Ajusta el ancho de la imagen para que se adapte al contenedor */
-    border-radius: 10px; /* Agrega bordes redondeados a la imagen */
-    margin-top: 20px; /* Agrega un margen superior para separar la imagen del texto */
+    width: 100%;
+    border-radius: 10px; 
+    margin-top: 20px; 
   }
   
   img {
@@ -291,16 +286,16 @@
   }
 
   .product-panel .col-md-6 {
-    width: 45%; /* Ancho del panel */
-    background-color: #0bffe3; /* Fondo gris */
-    padding: 20px; /* Espacio alrededor del panel */
-    margin: 10px; /* Margen entre los paneles */
-    border-radius: 10px; /* Bordes redondeados */
+    width: 45%; 
+    background-color: #0bffe3; 
+    padding: 20px; 
+    margin: 10px; 
+    border-radius: 10px;
     transition: transform 0.3s ease-in-out; /* Transición suave al agrandar el panel */
   }
 
   .product-panel .col-md-6:hover {
-    transform: scale(1.1); /* Agranda el panel al pasar el mouse sobre él */
+    transform: scale(1.1); 
   }
 
   .product-image:hover {
@@ -356,30 +351,30 @@
   }
 
   .register-container {
-    background-color: #fff; /* Color de fondo blanco */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    padding: 20px; /* Espaciado interno */
-    max-width: 400px; /* Ancho máximo */
-    margin: 0 auto; /* Centrar en la página */
+    background-color: #fff;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    max-width: 400px; 
+    margin: 0 auto; 
   }
 
   .login-container {
-    background-color: #fff; /* Color de fondo blanco */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    padding: 20px; /* Espaciado interno */
-    max-width: 400px; /* Ancho máximo */
-    margin: 0 auto; /* Centrar en la página */
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    max-width: 400px; 
+    margin: 0 auto; 
   }
 
   .login-container {
-    background-color: #fff; /* Color de fondo blanco */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    padding: 30px; /* Espaciado interno */
-    max-width: 400px; /* Ancho máximo */
-    margin: 0 auto; /* Centrar en la página */
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 30px; 
+    max-width: 400px; 
+    margin: 0 auto; 
 }
 
   .login-container h2 {
@@ -395,10 +390,10 @@
   }
 
   .login-form-group input {
-      width: calc(100% - 20px); /* Ajusta el ancho de los campos de entrada */
-      padding: 10px; /* Aumenta el relleno */
-      border: 1px solid #ccc; /* Borde delgado */
-      border-radius: 5px; /* Bordes redondeados */
+      width: calc(100% - 20px); 
+      padding: 10px; 
+      border: 1px solid #ccc; 
+      border-radius: 5px;
   }
 
   .login-checkbox-group {
@@ -406,16 +401,16 @@
   }
 
   .login-button-container {
-      text-align: center; /* Centra los botones */
+      text-align: center; 
   }
 
   .login-button-container button {
-      background-color: #333; /* Color de fondo del botón */
-      color: #fff; /* Color del texto del botón */
-      padding: 12px 24px; /* Aumenta el relleno del botón */
-      border: none; /* Elimina el borde del botón */
-      border-radius: 5px; /* Bordes redondeados */
-      cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+      background-color: #333; 
+      color: #fff; 
+      padding: 12px 24px; 
+      border: none; 
+      border-radius: 5px; 
+      cursor: pointer; 
       transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
   }
 
@@ -425,7 +420,7 @@
 
   .login-button-container a {
       margin-left: 10px; /* Aumenta el espacio entre el botón y el enlace */
-      color: #333; /* Color del texto del enlace */
+      color: #333; 
       text-decoration: none; /* Elimina el subrayado del enlace */
   }
 
@@ -465,8 +460,8 @@
 
   /* Mover el checkbox debajo del precio */
   .product-checkbox {
-      margin-left: 0; /* Reiniciar el margen izquierdo */
-      margin-top: 10px; /* Agregar un margen superior */
+      margin-left: 0;
+      margin-top: 10px;
   }
 
   .checkout-buttons {
@@ -499,46 +494,46 @@
   /* Estilos para el contenedor de la checkbox personalizada */
   .product-checkbox {
     margin-left: 20px; /* Agrega espacio entre el producto y la checkbox */
-    position: relative; /* Establece la posición relativa para alinear la checkbox */
+    position: relative; 
   }
 
   /* Estilos para la etiqueta que simulará la checkbox personalizada */
   .product-checkbox label {
     display: inline-block; /* Hace que la etiqueta sea un bloque en línea */
-    top: 50%; /* Alinea la etiqueta verticalmente al centro */
-    transform: translateY(-50%); /* Ajusta la posición verticalmente */
-    left: 0; /* Alinea la etiqueta a la izquierda del contenedor */
+    top: 50%;
+    transform: translateY(-50%); 
+    left: 0;
     cursor: pointer; /* Cambia el cursor al pasar por encima */
   }
 
   /* Estilos para el diseño de la checkbox personalizada */
   .product-checkbox label::before {
     content: ""; /* Agrega contenido antes de la etiqueta */
-    display: inline-block; /* Hace que el contenido sea un bloque en línea */
-    width: 20px; /* Establece el ancho de la checkbox */
-    height: 20px; /* Establece la altura de la checkbox */
-    border: 2px solid #333; /* Agrega un borde a la checkbox */
-    border-radius: 4px; /* Agrega bordes redondeados */
-    margin-right: 10px; /* Agrega espacio entre la checkbox y el texto */
-    position: relative; /* Establece la posición relativa para posicionar el contenido interno */
-    vertical-align: middle; /* Alinea verticalmente el contenido */
+    display: inline-block; 
+    width: 20px; 
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative; 
+    vertical-align: middle; 
   }
 
   /* Estilos para simular el estado activo de la checkbox */
   .product-checkbox input:checked + label::before {
-    background-color: #333; /* Cambia el color de fondo al estar marcada */
+    background-color: #333; 
   }
 
   /* Estilos para simular la marca dentro de la checkbox */
   .product-checkbox label::after {
     content: "\2713"; /* Agrega la marca de verificación */
-    color: #fff; /* Color del texto de la marca */
+    color: #fff; 
     font-size: 16px; /* Tamaño de la marca */
-    top: 50%; /* Alinea verticalmente al centro */
-    left: 50%; /* Alinea horizontalmente al centro */
+    top: 50%; 
+    left: 50%; 
     transform: translate(-600%, -55%); /* Ajusta la posición */
     opacity: 0; /* Inicialmente invisible */
-    position: absolute; /* Cambia la posición a absoluta */
+    position: absolute;
   }
 
   /* Estilos para mostrar la marca cuando la checkbox está marcada */
@@ -547,11 +542,11 @@
   }
 
   .sidebar {
-    background-color: #333; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    padding: 20px; /* Espaciado interno */
-    width: 250px; /* Ancho de la barra lateral */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
+    width: 250px; 
+    box-sizing: border-box; 
 }
 
   .radio-buttons,
@@ -573,3 +568,96 @@
   .product-filter {
       margin-top: 20px; /* Espaciado entre la sección de filtros y los productos */
   }
+
+   /* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  /* Reorganización de elementos */
+  
+  body {
+    font-size: 16px; /* Reducir el tamaño de la fuente en dispositivos móviles */
+  }
+  
+  /* Reorganización de elementos */
+  section.product-panel .row {
+    display: flex;
+    flex-direction: column; /* Mostrar productos en una columna en dispositivos móviles */
+  }
+  section.product-panel .row .col-md-6 {
+    width: auto; /* Establecer el ancho automático para que los productos ocupen todo el ancho */
+    padding: 0 10px; /* Reducir el espacio entre productos */
+  }
+  .header-content {
+    display: block; /* Mostrar enlaces de navegación en dispositivos móviles */
+  }
+  .user-profile {
+    float: right; /* Alinear perfil de usuario a la derecha */
+  }
+  .dropdown-content {
+    position: absolute; /* Ajustar la posición para mostrar los enlaces de compra */
+    display: none; /* Ocultar los enlaces de compra en dispositivos móviles */
+  }
+  .product-image {
+    width: 100%; /* Ajustar el tamaño de la imagen al ancho de la pantalla */
+    height: auto; /* Mantener la proporción de la imagen */
+  }
+  
+  .dropdown {
+    display: block !important; /* Mostrar el botón de compra en dispositivos móviles */
+  }
+  section.about-us {
+    width: 90%; /* Cambiar el ancho de la sección "about-us" */
+  }
+
+  section.product {
+    width: 90%; /* Ajustar el ancho de la sección */
+    flex-direction: column; /* Apilar elementos verticalmente en dispositivos móviles */
+  }
+
+  .product-image img {
+    width: 95%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 0; /* Opcional: eliminar el radio de borde para adaptarse a la pantalla */
+  }
+  
+  .checkout-buttons {
+    width: 90%; /* Ajustar el ancho al 90% del contenedor */
+    margin-top: 20px; /* Aumentar el margen superior para separarlo de la sección de productos */
+  }
+
+  .pay-button {
+    padding: 5px 10px;
+    margin: 5%;
+  }
+
+  .sidebar {
+    width: 70%; /* Reducir el ancho del sidebar */
+    padding: 10px; /* Ajustar el relleno para evitar que los elementos se agrupen demasiado */
+    top: 60px; /* Ajustar la distancia desde la parte superior para evitar la superposición con el encabezado */
+    overflow-y: auto; /* Agregar desplazamiento vertical si el contenido excede el tamaño del sidebar */
+   
+  }
+
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  /* Ajustes de tamaño de fuente */
+  body {
+    font-size: 16px; /* Reducir el tamaño de la fuente en tablets */
+  }
+  /* Reorganización de elementos */
+  .dropdown-content {
+    position: static; /* Cambiar la posición para mostrar los enlaces de compra */
+  }
+}
+
+/* Estilos para dispositivos de escritorio */
+@media only screen and (min-width: 993px) {
+  /* Reorganización de elementos */
+  .dropdown-content {
+    display: block; /* Mostrar los enlaces de compra en dispositivos de escritorio */
+  }
+  section.product-panel .row .col-md-6 {
+    width: 50%; /* Mostrar dos productos por fila en dispositivos de escritorio */
+  }
+}

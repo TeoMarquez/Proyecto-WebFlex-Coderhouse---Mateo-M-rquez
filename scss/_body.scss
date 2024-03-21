@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --dropdown-max-height: 200px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    animation: fadeInPage 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #86615C;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 50%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #f7bcbc; 
+    box-shadow: 0 2px 4px rgba(189, 74, 74, 0.1);  
+}
