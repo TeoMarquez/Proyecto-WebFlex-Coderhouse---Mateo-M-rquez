@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy2F8YcbtwI8kCKvslF0CvqE9t7ByJQOp6" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+        <title>Tienda Online</title>
+    </head>
+    
+    <body>
+    
+        <header class="bg-dark text-white p-2">
+            <div class="logo">
+                <a href="../carrito.html">
+                    <img src="../imagenes/Principal/Carrito.jpeg" alt="Carrito de Compras" style="width: 30px;">
+                </a>
+            </div>
+            <div class="header-content">
+                <div class="dropdown">
+                    <button class="dropbtn">Compras</button>
+                    <div class="dropdown-content" id="dropdown-compras" style="display: none;">
+                        <a href="compra_packs.html">Packs</a>
+                        <a href="compra_luces.html">Luces</a>
+                        <a href="compra_camaras.html">Cámaras</a>
+                        <a href="compra_sensores.html">Sensores</a>
+                    </div>
+                </div>
+                <a href="../nosotros.html" class="header-button">Sobre Nosotros</a>
+                <a href="../index.html" class="header-button">Inicio</a>
+            </div>
+            <div class="user-profile">
+                <img src="../imagenes/Principal/usuario.png" alt="Usuario" style="width: 30px;">
+                <div class="user-dropdown-content" style="display: none;" >
+                    <a href="../iniciar_sesion.html">Iniciar Sesión</a>
+                    <a href="../registrarse.html">Registrarse</a>
+                </div>
+            </div>
+        </header>
+    
+    <main>
+        <nav class="sidebar">
+            <div class="radio-buttons">
+                <label>
+                    <input type="radio" name="ordenar" value="precio" checked>
+                    Ordenar por Precio
+                </label>
+                <label>
+                    <input type="radio" name="ordenar" value="menor50k">
+                    Menores a $50.000
+                </label>
+                <label>
+                    <input type="radio" name="ordenar" value="menor100k">
+                    Menores a $100.000
+                </label>
+                <label>
+                    <input type="radio" name="ordenar"> Inteligente
+                </label>
+                <label>
+                    <input type="radio" name="ordenar"> Bajo Consumo
+                </label>
+                <label>
+                    <input type="radio" name="ordenar"> Control de Luces
+                </label>
+            </div>
+        </nav>
+
+        <section class="product" data-aos="zoom-in">
+            <div class="product-image">
+                <img src= "../imagenes/packs/1.jpg" alt="Producto 1">
+            </div>
+            <div class="product-details">
+                <h3>Pack conexion wifi tv</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <p>Precio: $50.00</p>
+            </div>
+        </section>
+
+        <section class="product" data-aos="zoom-in">
+            <div class="product-image">
+                <img src="../imagenes/packs/2.jpg" alt="Producto 2">
+            </div>
+            <div class="product-details">
+                <h3>Pack control de ambientes</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p>Precio: $80.00</p>
+            </div>
+        </section>
+
+        
+        <section class="product" data-aos="zoom-in">
+            <div class="product-image">
+                <img src="../imagenes/packs/3.jpeg" alt="Producto 3">
+            </div>
+            <div class="product-details">
+                <h3>Kit de luces</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <p>Precio: $50.00</p>
+            </div>
+        </section>
+
+        <section class="product" data-aos="zoom-in">
+            <div class="product-image">
+                <img src="../imagenes/packs/4.jpeg" alt="Producto 2">
+            </div>
+            <div class="product-details">
+                <h3>Pack cerradura electronica</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p>Precio: $80.00</p>
+            </div>
+        </section>
+        
+        
+        <section class="product" data-aos="zoom-in">
+            <div class="product-image">
+                <img src="../imagenes/packs/5.jpg" alt="Producto 1">
+            </div>
+            <div class="product-details">
+                <h3>Pack camaras</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <p>Precio: $50.00</p>
+            </div>
+        </section>
+
+        <section class="product" data-aos="zoom-in">
+            <div class="product-image">
+                <img src="../imagenes/packs/6.jpg" alt="Producto 2">
+            </div>
+            <div class="product-details">
+                <h3>Pack echodot + alexa</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p>Precio: $80.00</p>
+            </div>
+        </section>
+
+        
+        <section class="product" data-aos="zoom-in">
+            <div class="product-image">
+                <img src="../imagenes/packs/7.jpeg" alt="Producto 1">
+            </div>
+            <div class="product-details">
+                <h3>Kit de luces rgb control bluetooth</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <p>Precio: $50.00</p>
+            </div>
+        </section>
+
+        <section class="product" data-aos="zoom-in">
+            <div class="product-image">
+                <img src="../imagenes/packs/8.jpg" alt="Producto 2">
+            </div>
+            <div class="product-details">
+                <h3>Kit sensores ultrasonido</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p>Precio: $80.00</p>
+            </div>
+        </section>
+
+        
+        <section class="product" data-aos="zoom-in">
+            <div class="product-image">
+                <img src="../imagenes/packs/9.jpg" alt="Producto 1">
+            </div>
+            <div class="product-details">
+                <h3>Aspiradora Inteligente</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <p>Precio: $50.00</p>
+            </div>
+        </section>
+
+        <section class="product" data-aos="zoom-in">
+            <div class="product-image">
+                <img src="../imagenes/packs/10.jpg" alt="Producto 2">
+            </div>
+            <div class="product-details">
+                <h3>Kit camaras</h3>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p>Precio: $80.00</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="reserved">Derechos Reservados</p>
+        <a href="../nosotros.html" class="contact-btn">Contáctanos</a>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="../controldesplegables.js"></script>
+
+</body>
+</html>
