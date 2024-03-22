@@ -19,6 +19,10 @@ Este proyecto es un esquema web que representa la visualización de un portal pa
    git clone https://github.com/TeoMarquez/CoderHouse-WebFlex.git
 Abre el archivo index.html en tu navegador.
 
+2. O tambien puedes verlo desde este link:
+
+https://teomarquez.github.io/Proyecto-WebFlex-Coderhouse---Mateo-M-rquez/
+
 Explora las secciones y funcionalidades del portal.
 
 Tecnologías Utilizadas
